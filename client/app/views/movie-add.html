@@ -1,0 +1,18 @@
+<div ng-controller="MovieAddCtrl">
+  <div ng-controller="MovieViewCtrl">
+    <div ng-controller="MovieEditCtrl">
+      <form role="form">
+        <div class="form-group">
+          <label for="title" class="control-label">Title</label>
+          <input type="text" ng-model="movie.title" class="form-control" id="title" placeholder="Enter the movie title">
+        </div>
+        <div class="form-group">
+          <label for="url" class="control-label">URL</label>
+          <input type="text" ng-model="movie.url" class="form-control" id="url" placeholder="Enter the URL for movie">
+        </div>
+        <input type="submit" class="btn btn-primary" ng-click="saveMovie()" value="Save">
+      </form>
+      <br>
+    </div>
+  </div>
+</div>
